@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="content-type" content="text/html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        font-family: "PT Sans", sans-serif;
+      }
+
+      body {
+        box-sizing: border-box;
+        font-family: sans-serif;
+        background-color: white;
+        /* display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-content: center; */
+      }
+      .header {
+        /* display: flex;
+            flex-flow: wrap row;
+            justify-content: space-between;
+            */
+        background-color: white;
+        position: sticky;
+        top: 0px;
+        z-index: 9;
+      }
+      .navBar {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        margin-top: 25px;
+        margin-right: 60px;
+      }
+      .navMenu {
+        display: flex;
+        flex-flow: row wrap;
+        list-style: none;
+      }
+      .navList a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        padding: 10px;
+      }
+      .banner {
+        height: 50vh;
+        text-align: center;
+      }
+      .banner img {
+        height: 400px;
+      }
+      /* images */
+      .brandIcon {
+        width: 50%;
+        height: 20vh;
+        object-fit: c;
+      }
+      .lists {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        align-content: center;
+      }
+      .selection {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: rgb(29, 195, 236);
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        width: 250px;
+      }
+      .menuItems a {
+        text-decoration: none;
+        color: black;
+      }
+      .dropDownBtn {
+        transition: transform 0.2s ease;
+      }
+      .selection:hover .dropDownBtn {
+        transform: rotate(180deg);
+      }
+      .dropDownContent {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 265px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        right: 3px;
+        top: 45px;
+      }
+      .selection:hover .dropDownContent {
+        display: flex;
+        flex-flow: column wrap;
+      }
+      .dropDownOptions {
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        padding: 5px 10px;
+      }
+      .dropDownOptions:hover {
+        background-color: rgb(29, 195, 236);
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <!-- <img class="brandIcon" src="logos/hospitallogo.png" alt=""> -->
+
+      <nav class="navBar">
+        <img class="brandIcon" src="hostel text.jfif" alt="" />
+
+        <ul class="navMenu">
+          <li class="navList">
+            <a href="Home.html"><b>Home</b> </a>
+          </li>
+          <li class="navList">
+            <a href="aboutus.html"><b>About Us</b> </a>
+          </li>
+        </ul>
+      </nav>
+      <hr />
+    </div>
+    <header class="banner">
+      <img src="one.jpg" alt="" />
+    </header>
+    <div class="lists">
+      <nav class="selection">
+        <ul class="menuList">
+          <li class="menuItems">
+            <a href=""
+              >--Select Your Location--<i
+                class="fas fa-chevron-down dropDownBtn"
+              ></i
+            ></a>
+            <ul class="dropDownContent">
+              <li>
+                <a href="Gandimaisamma.html" class="dropDownOptions"
+                  >Gandimaisamma</a
+                >
+              </li>
+              <li>
+                <a href="kompally.html" class="dropDownOptions">Kompally</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/65ce5f20fd.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
