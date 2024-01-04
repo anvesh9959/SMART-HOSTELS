@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>just sample kosam anthe</title>
+</head>
+<body>
+<p id="inp">type chey ra zooka</p>
+<input id="dataa">
+<button onclick="live_serve()">submit</button>
+<script type="text/javascript">
+function live_serve(){
+ele=document.getElementById('dataa').value;
+httpRequest=new XMLHttpRequest();
+httpRequest.open('GET','https://reqres.in/api/users/'+ele);
+httpRequest.send();
+httpRequest.onreadystatechange = function(){
+    if(this.readyState==4 && this.status==200){
+        dat=JSON.parse(this.responseText);
+        document.getElementById('inp').innerHTML=dat.data.first_name;
+    }
+}
+
+}</script>
+</body>
+</html>

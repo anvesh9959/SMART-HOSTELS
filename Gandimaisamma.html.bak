@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gandimaisamma</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+    *{
+            margin: 0;
+            padding: 0;
+            font-family: 'PT Sans', sans-serif;
+            /* list-style: none; */
+        
+        }
+        .banner{
+            height:50px;
+            width:500px;
+        }
+
+        
+        body{
+            box-sizing: border-box;
+            font-family: sans-serif;
+            background-color: white;
+            margin: 0px;
+            padding: 10px;
+            
+        }
+        
+        }
+        .header{
+            /* display: flex;
+            flex-flow: wrap row;
+            justify-content: space-between;
+            */
+            background-color: white;
+            position: sticky;
+            top: 0px;
+            z-index: 9;
+
+        }
+        /* images */
+        .brandIcon{
+            height: 80px;
+            width: 80px;
+            margin-left: 200px;
+
+        }
+        .hospitalBanner{
+            width: 100%;
+            height: 20vh;
+            object-fit: cover;
+        }
+        .stanzaimage{
+            width: 50vw;
+            height:50vw;
+            object-fit: cover;
+
+        }
+        .jeevanimage{
+            width: 50vw;
+            height: 50vh;
+            object-fit: cover;
+        }
+        
+        .navBar{
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            margin-top: 25px;
+            margin-right: 60px;
+        }
+        .navMenu{
+            display: flex;
+            flex-flow: row wrap;
+            list-style: none;
+
+        }
+        .navList a{
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+            padding: 10px;
+            
+        }
+        .heading{
+            left: 40vw;
+            top: 20vh;
+            margin-top: 2rem;
+            position: absolute;
+            z-index: 1;  
+            
+        }
+        .container{
+            margin: 10px;
+            padding: 10px;
+            /* font-size: 30px; */
+            display: flex;
+            flex-flow: wrap row;
+            height: 2000px;
+            /* border: 1px solid black; */
+            
+
+        }
+        .subContainer1{
+            width: 25vw;
+            height: 40vh;
+            display: flex;
+            flex-flow: column wrap;
+            /* border: 1px solid black; */
+        }
+        .hostellist{
+            position: absolute;
+            top: 50vh;
+            left: -7rem;
+            margin-left: 10rem;
+            font-size: 20px;
+            background-color: rgb(196, 190, 190);
+            cursor: pointer;
+            /* padding: 10px; */
+            border-radius: 10px;
+            overflow: hidden;
+            list-style: none;
+
+
+        }
+        .listItem{
+            padding: 5px;
+        }
+        .listItem:hover{
+            background-color: #0590d8;
+           
+            
+        }
+        .Btn{
+            float: right;
+            margin-left: 1rem;
+        }
+        
+        /* containers */
+        .subContainer2{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            left: 30px;
+            /* border: 1px solid black; */
+            width: 65vw;
+        }
+        .subContainer3{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            left: 30px;
+            /* border: 1px solid black; */
+            width: 65vw;
+        }
+        .subContainer4{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            left: 30px;
+            /* border: 1px solid black; */
+            width: 65vw;
+        }
+        .subContainer5{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            left: 30px;
+            /* border: 1px solid black; */
+            width: 65vw;
+        }
+        .subContainer{
+            display: none;
+        }
+        
+        .subHeading{
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            margin-left: 11rem;
+
+        }
+        .para{
+            padding: 10px;
+            font-size: 20px;
+            
+        }
+        .specList{
+            position: relative;
+            left: 20px;
+            color:#0590d8 ;
+        
+        }
+        .specItem:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .address{
+            margin-left: 20px;
+        }
+        .Join{
+            position: relative;
+            margin-top: 20px;
+            border: none;
+            outline: none;
+            background-color: rgb(48, 106, 212);
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            left: 6vw;
+            font-weight: bold;
+        }
+        .Join {
+            text-decoration: none;
+            color: black;
+        }
+        .Join:hover{
+            background-color: #0590d8 ;
+        }
+
+
+</style>
+<body>
+        <div class="banner">
+            <img class="hospitalBanner" src="hostel text.jfif" alt="">
+        </div>
+    <div class="container">
+        <div class="subContainer1">
+      <ul class="hostellist">
+        <li class="listItem" id="listItem1" > Stanza Living , Gandimaisa <i class="fas fa-angle-right Btn"></i></li>
+        <li class="listItem" id="listItem2" > Jeevan Hostel, Gandimaisamma <i class="fas fa-angle-right Btn"></i></li>
+      </ul>
+      </div>
+      <div class="subContainer2 ">
+          <h2 class="subHeading">Stanza Living, Gandimaisamma </h2>
+          <img class="stanzaimage" src="stanza2.jpg" alt="">
+          <p class="para">
+           The Hostel which is suitable for the Students who are living near Gandimaisamma.The hostel looks good and the food Menu of the of the hostel is very nice compare with the Other Hostels In Gandimaisamma.The Stanza Living Provides the 100% security for the students who are living this hostel.Based on the feedback of the students the hostel is very good.
+          </p>
+          <h2 class="subHeading">FACILITIES:</h2>
+          
+          <ul class="specList">
+            <li class="specItems"> <span class="specItem" > FREE WIFI</span></li>
+            <li class="specItems"> <span class="specItem" > 100% SECURITY</span></li>
+            <li class="specItems"> <span class="specItem" > QUALITY FOOD </span></li>
+            <li class="specItems"> <span class="specItem" > SPECIFIED ROOMS </span></li>
+            <li class="specItems"> <span class="specItem" > GOOD ATMOSPHERE </span></li>
+            <li class="specItems"> <span class="specItem" > PARKING AVAILABLE </span></li>
+            <li class="specItems"> <span class="specItem" > NEAR TO BUSTAND </span></li>
+            <li class="specItems"> <span class="specItem" > CC CAM SECURITY FOR BELONGINGS </span></li>
+        </ul>
+        </p>
+		<style>
+            table, th, td {
+              border: 1px solid black;
+            }
+            tr:nth-child(even){background-color: #f2f2f2}
+
+            th {
+              background-color: #04AA6D;
+              color: white;
+		    }
+            </style>
+            </head>
+            <body>
+            
+            <table style="width:100%">
+              <tr>
+                <th>NO OF SHARING</th>
+                <th>ROOM AVAILABILITY</th>
+                <th>COST</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>YES</td>
+                <td>6500/-</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>YES</td>
+                <td>5800/-</td>
+              </tr>
+               <tr>
+                <td>3</td>
+                <td>NO</td>
+                <td>5000/-</td>
+              </tr>
+               <tr>
+                <td>4</td>
+                <td>YES</td>
+                <td>4600/-</td>
+              </tr>
+            </table>
+
+          <h2 class="subHeading">Contact</h2>
+         <span class="address"><b>Stanza Living</b></span>
+         <p class="para">
+            Road No 143. Gandimaisamma, <br>
+            Medchal, Hyderabad, Telangana 500043<br>
+            Hyderabad – 500 043, Telangana State, India.<br>
+            Phone No : 080 4600 7689<br>
+
+            <button class="Join"><a href="join.php">Join In Hostel</a></button>
+        
+        </p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.9836162990823!2d78.42449370000003!3d17.577311899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8f3cbd8d8b4f%3A0x9931f255bd39d434!2sStanza%20Living%20Lagos%20House%20%7C%20PG%20in%20Gandi%20Maisamma!5e1!3m2!1sen!2sin!4v1638881866791!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          
+     </div>
+
+     <div class="subContainer3 subContainer">
+        <h2 class="subHeading"> Jeevan Hostel </h2>
+        <img class="jeevanimage" src="jeevan1.jpg" alt="">
+        <p class="para">
+            The Hostel which is suitable for the Students who are living near Gandimaisamma.The hostel looks good and the food Menu of the of the hostel is very nice compare with the Other Hostels In Gandimaisamma.The Stanza Living Provides the 100% security for the students who are living this hostel.Based on the feedback of the students the hostel is very good.
+         
+        </p>
+        <h2 class="subHeading">FACILITIES:</h2>
+        <ul class="specList">
+            <li class="specItems"> <span class="specItem" > FREE WIFI</span></li>
+            <li class="specItems"> <span class="specItem" > 100% SECURITY</span></li>
+            <li class="specItems"> <span class="specItem" > QUALITY FOOD </span></li>
+            <li class="specItems"> <span class="specItem" > SPECIFIED ROOMS </span></li>
+            <li class="specItems"> <span class="specItem" > GOOD ATMOSPHERE </span></li>
+            <li class="specItems"> <span class="specItem" > PARKING AVAILABLE </span></li>
+            <li class="specItems"> <span class="specItem" > NEAR TO BUSTAND </span></li> 
+          </ul>
+      </p>
+	  <style>
+            table, th, td {
+              border: 1px solid black;
+            }
+            tr:nth-child(even){background-color: #f2f2f2}
+
+            th {
+              background-color: #04AA6D;
+              color: white;
+			 }
+            </style>
+            </head>
+            <body>
+            
+            <table style="width:100%">
+              <tr>
+                <th>NO OF SHARING</th>
+                <th>ROOM AVAILABILITY</th>
+                <th>COST</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>YES</td>
+                <td>5000/-</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>YES</td>
+                <td>4500/-</td>
+              </tr>
+               <tr>
+                <td>3</td>
+                <td>NO</td>
+                <td>4200/-</td>
+              </tr>
+               <tr>
+                <td>4</td>
+                <td>YES</td>
+                <td>3800</td>
+              </tr>
+            </table>
+
+        <h2 class="subHeading">Contact</h2>
+       <span class="address"><b>Jeevan Hostels</b></span>
+       <p class="para">
+        <p class="para">
+            Road no 123. Gandimaisamma, <br>
+            Medchal, Hyderabad, Telangana 500043<br>
+            Hyderabad – 500 043, Telangana State, India.<br>
+            Phone No :080 460 4567<br>
+
+            <button class="Join"><a href="join.php">Join In Hostel</a></button>
+        
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d673.3028174781347!2d78.42583674100163!3d17.57442087470817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8fe759a0dcd1%3A0x280b8b6f029936e1!2sJeevan%20Hostel!5e0!3m2!1sen!2sin!4v1638883676316!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+   <script src="gandimaisamma.js"></script>
+   <script src="https://kit.fontawesome.com/65ce5f20fd.js" crossorigin="anonymous"></script> 
+</body>
+</html>
